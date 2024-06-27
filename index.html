@@ -1,0 +1,436 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Charan Tej Reddy Yanamala Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Yanamala Charan Tej Reddy's Portfolio Website</div>
+      <div>
+        <ul class="nav-links">
+         
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo"></div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#publications" onclick="toggleMenu()">Publications</a></li>
+          <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Charan Tej Reddy Yanamala profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Charan Tej Reddy Yanamala</h1>
+        <p class="section__text__p2">Aspiring Data Scientist</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/y-charan-tej-reddy-b26291202'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/YCharantejreddy'"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>University Projects <br />in Machine Learning</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Malla Reddy University<br />B.TECH in CSE(AIML)</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am an aspiring professional seeking an entry-level position in a dynamic company, eager to leverage my skills in machine
+               learning and data analysis. Recently, I completed my B.Tech in Computer Science Engineering with a specialization in 
+               Artificial Intelligence and Machine Learning at Malla Reddy University, Hyderabad, achieving a CGPA of 8.39. My passion 
+               for continuous learning drives me to excel in my field. I have proficiency in Python, SQL, HTML, CSS,JavaScript,Machine Learning, and web development 
+               with Flask and Jupyter Notebook. Additionally, I possess strong skills in data analysis using Pandas, NumPy, Matplotlib, Seaborn, 
+               and natural language processing with NLTK and SpaCy.
+               I am enthusiastic about applying my academic knowledge and project experience to real-world challenges and opportunities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>University Projects <br />in Machine Learning</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <div class="article-container">
+                <article>
+                  <h4>B.TECH in CSE (AIML)-2024</h4>
+                  <p>• Aggregate CGPA: 8.39</p>
+                  <h4>Intermediate-2020</h4>
+                  <p>• Aggregate points: 9.6</p>
+                  <h4>High School-2018</h4>
+                  <p>• Aggregate points: 8.3</p>
+                </article>
+                <!-- <article>
+                  <h4>Intermediate-2020</h4>
+                  <p>• Aggregate points: 9.6</p>
+                  
+                </article>
+                <article>
+                  <h4>High School-2018</h4>
+                  <p>• Aggregate points: 8.3</p>
+                </article> -->
+              </div>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am an aspiring professional seeking an entry-level position in a dynamic company, eager to leverage my skills in machine learning and data analysis. Recently, I completed my B.Tech in Computer Science Engineering with a specialization in Artificial Intelligence and Machine Learning at Malla Reddy University, Hyderabad, achieving a CGPA of 8.39. My passion for continuous learning drives me to excel in my field. I have proficiency in Python, SQL, HTML, CSS, JavaScript, Machine Learning, and web development with Flask and Jupyter Notebook. Additionally, I possess strong skills in data analysis using Pandas, NumPy, Matplotlib, Seaborn, and natural language processing with NLTK and SpaCy. I am enthusiastic about applying my academic knowledge and project experience to real-world challenges and opportunities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">University Projects</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Project icon"
+                  class="icon"
+                />
+                <div>
+                  <h3><a href="https://github.com/YCharantejreddy/Startup-Profit-Predicition-Using-ML">StartUp Profit Prediction Using Machine Learning</a></h3>
+                  <p>Analyzed a database of 50 startup companies to build a predictive model through supervised learning to accurately classify profitable startups. <br> <strong>Technical Skills:</strong> Python, Machine Learning, Jupyter Notebook <br> <strong>Soft Skills:</strong> Time Management, Teamwork, Presentation skills, Report writing</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Project icon"
+                  class="icon"
+                />
+                <div>
+                  <h3><a href="https://github.com/YCharantejreddy/Classification-of-Distributed-Deenial-of-Service-Attacks">Classification of DDoS Attacks</a></h3>
+                  <p>Classified traffic as malicious or benign by analyzing the SDN dataset. <br> <strong>Technical Skills:</strong> Python with Pandas, NumPy, Matplotlib, Seaborn, Machine Learning <br> <strong>Soft Skills:</strong> Presentation skills, Leadership, Teamwork, Logical Thinking</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Project icon"
+                  class="icon"
+                />
+                <div>
+                  <h3><a href="https://github.com/YCharantejreddy/Classification-of-Distributed-Deenial-of-Service-Attacks">Multi Lingual Text Summarization Using Spacy in NLP</a></h3>
+                  <p>Developed and deployed a multilingual text summarization solution, integrating Spacy and Flask, for concise summaries in various languages, demonstrating proficiency in NLP and web application development. <br> <strong>Technical Skills:</strong> Matplotlib, NumPy, NLTK, Spacy, Seaborn, Machine Learning, Natural Language Processing <br> <strong>Soft Skills:</strong> Report writing, Logical Thinking, Critical Thinking</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Heart Disease Prediction Using Machine Learning"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Heart Disease Prediction Using Machine Learning</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Multi Lingual Text Summarization Using Spacy in NLP"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Multi Lingual Text Summarization Using Spacy in NLP</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <section id="publications">
+      <p class="section__text__p1">Read My</p>
+      <h1 class="title">Publications</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Publications</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Publication icon"
+                  class="icon"
+                />
+                <div>
+                  <h3><a href="https://erpublications.com/uploaded_files/download/p-rukmini-d-yellugari-vamshidhar-r-yannam-satya-t-yanamala-charantej-r-thalagaturi-v_UpaSq.pdf">Heart Disease Prediction Using Machine Learning</a></h3>
+                  <p>Developed a novel machine learning model for heart disease prediction, achieving high accuracy rates. Published in the International Journal of Enhanced Research in Science, Technology and Engineering. ER Publications ISSN: 2319-7463, New Delhi, India.</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Publication icon"
+                  class="icon"
+                />
+                <div>
+                  <h3><a href="https://ijcrt.org/viewfull.php?&p_id=IJCRT2402229">Multi Lingual Text Summarization Using Spacy in NLP</a></h3>
+                  <p>Recognized by the International Journal of Creative Research Thoughts (IJCRT) for the publication of "Multilingual Text Summarization using SpaCy and Flask" in Volume 12, Issue 2, February 2024. The paper, indexed in IJCRT with a 7.97 Impact Factor by Google Scholar, was published on 07-February-2024 and holds UGC approval with Journal No: 49023 (18).</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="certifications">
+      <p class="section__text__p1">View My</p>
+      <h1 class="title">Certifications</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Certifications</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Certification icon"
+                  class="icon"
+                />
+                <div>
+                  <h3><a href="https://www.coursera.org/account/accomplishments/verify/N4DJ8ZE4P3YK">Programming Foundations with HTML and CSS</a></h3>
+                  <p>Coursera-Duke University, 2021</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Certification icon"
+                  class="icon"
+                />
+                <div>
+                  <h3><a href="https://www.coursera.org/account/accomplishments/verify/PFDR4JYZGGZG">Python for Data Science, AI and Development</a></h3>
+                  <p>IBM, 2023</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Certification icon"
+                  class="icon"
+                />
+                <div>
+                  <h3><a href="https://www.credly.com/badges/d86b1eac-7d46-47b4-85ae-d9b0b7584bac/print">AWS Academy Graduate - AWS Academy Cloud Foundations</a></h3>
+                  <p>IBM, 2023</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Certification icon"
+                  class="icon"
+                />
+                <div>
+                  <h3><a href="https://archive.nptel.ac.in/content/noc/NOC23/SEM1/Ecertificates/106/noc23-cs24/Course/NPTEL23CS24S4409156604006402.jpg">Deep Learning NPTEL Exam</a></h3>
+                  <p>IBM, 2023</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Certification icon"
+                  class="icon"
+                />
+                <div>
+                  <h3><a href="https://www.coursera.org/account/accomplishments/verify/5H7NXXQ8M53D">Data Platform, Cloud Networking and AI in the Cloud</a></h3>
+                  <p>IBM, 2023</p>
+                </div>
+              </article>
+              <!-- <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Certification icon"
+                  class="icon"
+                />
+                <div>
+                  <h3><a href="https://www.coursera.org/account/accomplishments/verify/PFDR4JYZGGZG">Python for Data Science, AI and Development</a></h3>
+                  <p>IBM, 2023</p>
+                </div>
+              </article> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:yanamalacharantejreddy@gmail.com">yanamalacharantejreddy@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/y-charan-tej-reddy-b26291202">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Charan Tej Reddy Yanamala. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
